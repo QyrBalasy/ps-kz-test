@@ -56,7 +56,7 @@
   position: relative;
   width: 100%;
   min-width: #{$tab-count * 60px};
-  input[name="tab-control"] {
+  input[name='tab-control'] {
     display: none;
   }
 }
@@ -75,7 +75,7 @@
     line-height: 24px;
     font-weight: 700;
     color: $pagination;
-    cursor: pointer;
+
     white-space: nowrap;
     -webkit-touch-callout: none;
     &:hover,
@@ -87,6 +87,9 @@
         fill: lighten($secondary, 15%);
       }
     }
+  }
+  .content-items__tabs-label {
+    cursor: pointer;
   }
 }
 
