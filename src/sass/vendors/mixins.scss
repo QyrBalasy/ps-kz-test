@@ -1,12 +1,12 @@
 //tab settings
 $tab-count: 5;
-$indicator-width: 50px;
-$indicator-height: 4px;
+// $indicator-width: 50px;
+// $indicator-height: 4px;
 /* breakpoints */
-$breakpoints: (
-  medium: #{$tab-count * 250px},
-  small: #{$tab-count * 150px},
-);
+// $breakpoints: (
+//   medium: #{$tab-count * 250px},
+//   small: #{$tab-count * 150px},
+// );
 
 /* selectors relative to radio inputs */
 $label-selector: "~ ul > li";
@@ -24,10 +24,6 @@ $content-selector: "~ .content-items__tabs-content > section";
         @content;
       }
 
-      #{$slider-selector} {
-        transform: translateX(#{100% * ($i - 1)});
-      }
-
       #{$content-selector}:nth-child(#{$i}) {
         display: block;
       }
@@ -41,15 +37,17 @@ input[name="tab-control"] {
   @include tabs {
     > label {
       cursor: default;
-      color: $accent;
+      color: $tabLabel;
+      border-bottom: 5px solid $button-hover;
+      padding-bottom: 6px;
 
       svg {
         fill: $accent;
       }
 
-      @media (max-width: map-get($breakpoints, small)) {
-        background: rgba(0, 0, 0, 0.08);
-      }
+      // @media (max-width: map-get($breakpoints, small)) {
+      //   background: rgba(0, 0, 0, 0.08);
+      // }
     }
   }
 }

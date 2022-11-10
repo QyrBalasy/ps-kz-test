@@ -12,6 +12,7 @@
     flex-direction: column;
     row-gap: 30px;
     height: calc(100vh - 130px);
+    align-items: center;
     & li:nth-child(7) {
       margin-top: auto;
     }

@@ -8,8 +8,9 @@
   background-color: $main-color;
   display: flex;
   &-container {
-    padding: 20px 150px 0 90px;
+    padding: 20px 150px 50px 90px;
     width: 100%;
+    min-height: 100vh;
   }
 }
 

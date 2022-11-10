@@ -3,11 +3,11 @@
     display: flex;
     gap: 5px;
     align-items: center;
+    color: $pagination;
     & a {
       font-size: 12px;
       line-height: 12px;
       font-weight: 400;
-      color: $pagination;
     }
   }
   &__form {
@@ -67,14 +67,9 @@
   justify-content: flex-start;
   column-gap: 20px;
   margin-bottom: 10px;
-  // align-items: flex-end;
-  // flex-wrap: wrap;
+  padding-bottom: 8px;
+  border-bottom: 1px solid $border-input;
   li {
-    // box-sizing: border-box;
-    // flex: 1;
-    // width: #{100% / $tab-count};
-    // padding: 0 10px;
-    // text-align: center;
     transition: all 0.3s ease-in-out;
     font-size: 14px;
     line-height: 24px;
@@ -83,7 +78,6 @@
     cursor: pointer;
     white-space: nowrap;
     -webkit-touch-callout: none;
-    // @include user-select(none);
     &:hover,
     &:focus,
     &:active {
@@ -92,21 +86,6 @@
       svg {
         fill: lighten($secondary, 15%);
       }
-    }
-  }
-
-  &__slider {
-    position: relative;
-    width: calc(100% / $tab-count);
-    transition: all 0.33s cubic-bezier(0.38, 0.8, 0.32, 1.07);
-    &-indicator {
-      position: relative;
-      width: $indicator-width;
-      max-width: 100%;
-      margin: 0 auto;
-      height: $indicator-height;
-      background: $accent;
-      border-radius: 1px;
     }
   }
 }

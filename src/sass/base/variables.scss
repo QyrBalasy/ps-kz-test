@@ -8,10 +8,9 @@ $border-input: #b8ced7;
 $button-hover: #00a9db;
 
 $blue: #428bff;
-$red: #ff4a53;
-$dark: #333;
+$tabLabel: #31505B;
 
-$accent: $blue;
+$accent: $button-hover;
 $accent-inactive: desaturate($accent, 85%);
 $secondary: $accent-inactive;
 
