@@ -1,0 +1,16 @@
+// color variables:
+$white: #ffffff;
+$black: #000000;
+$navigation: #1c1e27;
+$main-color: #e5ebf0;
+$pagination: #737e84;
+$border-input: #b8ced7;
+$button-hover: #00a9db;
+
+$blue: #428bff;
+$red: #ff4a53;
+$dark: #333;
+
+$accent: $blue;
+$accent-inactive: desaturate($accent, 85%);
+$secondary: $accent-inactive;

@@ -1,0 +1,44 @@
+//header
+.header {
+  padding: 13px 30px 12px 13px;
+  background-color: $white;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 5;
+  &-items {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-item__logo {
+    gap: 13px;
+    display: flex;
+    max-width: 120px;
+    align-items: center;
+    & img {
+      width: 34px;
+      height: 30px;
+    }
+    & p {
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 12px;
+    }
+  }
+  &-item__info {
+    display: flex;
+    gap: 40px;
+    &-badge {
+      display: flex;
+      gap: 11px;
+      align-items: center;
+      & img {
+        width: 49px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+  }
+}
