@@ -1,15 +1,15 @@
 {
-  "name": "parcel-project-template",
+  "name": "ps-kz-test",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://goitacademy.github.io/parcel-project-template",
+  "homepage": "https://qyrbalasy.github.io/ps-kz-test",
   "scripts": {
-    "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /parcel-project-template/"
+    "start": "parcel -p 3000 src/*.html",
+    "build": "parcel build src/*.html --public-url /ps-kz-test/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/goitacademy/parcel-project-template.git"
+    "url": "git+https://github.com/QyrBalasy/ps-kz-test.git"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
