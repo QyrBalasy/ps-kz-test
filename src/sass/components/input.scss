@@ -12,6 +12,11 @@
   &:focus {
     border: 1px solid #0d47a1;
   }
+  @media (max-width: $mobile) {
+    padding: 10px 15px 15px;
+    font-size: 15px;
+    line-height: 15px;
+  }
 }
 
 .form-input:focus ~ span,
@@ -41,8 +46,12 @@ span {
     color: $black;
     font-size: 18px;
     padding: 0 10px;
-     @media (max-width: $tablet) {
-          font-size: 15px;
-      }
+    @media (max-width: $tablet) {
+      font-size: 15px;
+    }
+    @media (max-width: $mobile) {
+      top: 12px;
+      left: 5px;
+    }
   }
 }
