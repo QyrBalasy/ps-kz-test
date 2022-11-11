@@ -2,6 +2,9 @@
   background-color: $navigation;
   padding: 15px 20px;
   max-width: 80px;
+  @media (max-width: $mobile) {
+     padding: 15px 10px;
+  }
   &-container {
     position: sticky;
     top: 90px;
