@@ -1,9 +1,13 @@
 .navigation {
   background-color: $navigation;
   padding: 15px 20px;
-  max-width: 80px;
+  width: 60px;
   @media (max-width: $mobile) {
-     padding: 15px 10px;
+    padding: 15px 10px;
+    width: 100%;
+    position: fixed;
+    z-index: 50;
+    bottom: 0;
   }
   &-container {
     position: sticky;
@@ -18,6 +22,14 @@
     align-items: center;
     & li:nth-child(7) {
       margin-top: auto;
+    }
+    @media (max-width: $mobile) {
+      flex-direction: row;
+      height: 20px;
+      justify-content: space-between;
+      & li:nth-child(7) {
+        margin-top: inherit;
+      }
     }
   }
 }
