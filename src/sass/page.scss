@@ -18,6 +18,9 @@
       font-weight: 700;
       color: $black;
       margin: 17px 0 20px;
+      @media (max-width: $tablet) {
+          font-size: 20px;
+      }
     }
     &-description {
       font-size: 18px;
@@ -38,6 +41,11 @@
       justify-content: space-between;
       gap: 40px;
       background-color: $white;
+      @media (max-width: $tablet) {
+          flex-direction: column;
+          padding: 25px 35px;
+           gap: 25px;
+      }
     }
   }
   &__tabs {
@@ -54,7 +62,7 @@
 //tabs
 .content-items__tabs-wrapper {
   position: relative;
-  width: 100%;
+  // width: 100%;
   min-width: #{$tab-count * 60px};
   input[name='tab-control'] {
     display: none;
@@ -69,6 +77,9 @@
   margin-bottom: 10px;
   padding-bottom: 8px;
   border-bottom: 1px solid $border-input;
+  @media (max-width: $tablet) {
+          overflow-x: scroll;
+      }
   li {
     transition: all 0.3s ease-in-out;
     font-size: 14px;

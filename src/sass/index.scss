@@ -9,8 +9,23 @@
   display: flex;
   &-container {
     padding: 20px 150px 50px 90px;
-    width: 100%;
+    width: calc( 100% - 80px );
     min-height: 100vh;
+  }
+  @media (max-width: $small-laptop) {
+    &-container {
+      padding: 20px 130px 50px 80px;
+    }
+  }
+  @media (max-width: $tablet) {
+    &-container {
+      padding: 20px 30px 50px 30px;
+    }
+  }
+  @media (max-width: $mobile) {
+    &-container {
+      padding: 10px 10px 50px 10px;
+    }
   }
 }
 

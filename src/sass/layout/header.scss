@@ -34,11 +34,26 @@
       gap: 11px;
       align-items: center;
       & img {
-        width: 49px;
-        height: 50px;
+        width: 30px;
+        height: 30px;
         border-radius: 50%;
         object-fit: cover;
       }
+      & p {
+        font-size: 12px;
+        line-height: 12px;
+        color: $pagination;
+
+        &:first-of-type {
+          font-weight: 700;
+          color: $black;
+        }
+      }
+    }
+  }
+  @media (max-width: $mobile) {
+    &-item__info-badge p {
+      display: none;
     }
   }
 }

@@ -41,5 +41,8 @@ span {
     color: $black;
     font-size: 18px;
     padding: 0 10px;
+     @media (max-width: $tablet) {
+          font-size: 15px;
+      }
   }
 }
